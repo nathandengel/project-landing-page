@@ -21,10 +21,6 @@ body {
 
 }
 
-.link-container {
-
-}
-
 .logo {
     font-size: 24px;
     color: #f9faf8;
@@ -74,12 +70,13 @@ a {
 button {
     background-color: #3882f6;
     font-size: 18px;
+    font-weight: bold;
     color: #e5e7eb;
     display: flex;
     align-self: flex-start;
     margin-top: 12px;
     padding: 8px 26px;
-    border-radius: 5px;
+    border-radius: 10px;
     border: none;
 }
 
@@ -136,7 +133,7 @@ button {
 
 .quote-para {
     background-color: #e5e7eb;
-    padding: 120px 280px;
+    padding: 100px 280px;
     display: flex;
     flex-direction: column;
 
@@ -161,6 +158,36 @@ button {
     background-color: #3882f6;
     font-size: 18px;
     color: #e5e7eb;
+    display: flex;
+    padding: 60px 240px;
+    margin: 100px auto;
+    border-radius: 10px;
+    gap: 40px;
+}
+
+.final-text-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.final-hero {
+    font-size: 24px;
+    font-weight: bolder;
+}
+
+.final-text {
+    font-size: 18px;
+}
+
+.bottom-button {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    border: 2px solid #e5e7eb;
+   }
+
+span {
+    margin: 0 6px;
 }
 
 .footer {
