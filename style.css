@@ -1,18 +1,23 @@
 * {
-    font-family: 'Roboto';
+    font-family: 'Roboto', sans-serif;
 }
 
 body {
     display: flex;
     flex-direction: column;
+    min-height: 100vh;
 }
 
 .header, .footer {
     background-color: #1f2937;
+    padding: 60px 280px;
 }
 
 .header {
     display: flex;
+    justify-content: space-between;
+    align-items: center;
+
 
 }
 
@@ -23,6 +28,7 @@ body {
 .logo {
     font-size: 24px;
     color: #f9faf8;
+    font-weight: bolder;
     
 }
 
@@ -30,42 +36,110 @@ a {
     font-size: 18px;
     color: #e5e7eb;
     text-decoration: none;
+    margin: 0 12px;
+}
+
+.initial-wrapper {
+  background-color: #1f2937;
+  padding: 120px 280px;
+  display: flex;
+  justify-content: space-between;
+  
+
 }
 
 .initial-content {
     background-color: #1f2937;
+    display: flex;
+    flex-direction: column;
 }
 
 .hero-text {
     font-size: 48px;
     font-weight: bolder;
     color: #f9faf8;
+    display: flex;
+    flex-wrap: wrap;
+    width: 400px;
+    margin-bottom: 0;
 }
 
 .intro-para {
     font-size: 18px;
     color: #e5e7eb;
+    width: 450px;
+    margin-top: 12px;
 }
 
 button {
     background-color: #3882f6;
     font-size: 18px;
     color: #e5e7eb;
+    display: flex;
+    align-self: flex-start;
+    margin-top: 12px;
+    padding: 8px 26px;
+    border-radius: 5px;
+    border: none;
+}
+
+.placeholder {
+    padding: 120px 200px;
+    background-color: #636365;
+    color: #f9faf8;
+    width: 200px;
+   
+}
+
+.card-wrapper {
+    display: flex;
+    justify-content: center;
+    padding: 0px 280px 120px 280px;
+    gap: 52px;
 }
 
 .info {
     font-size: 36px;
     font-weight: bolder;
     color: #1f2937;
+    padding: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
+.image {
+    border: 5px solid #3882f6;
+    border-radius: 25px;
+    padding: 50px;
+    width: 100px;
+    height: 100px;
+   
+}
 .card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 200px;
+    
+}
+
+.text {
     font-size: 18px;
     color: #1f2937;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    margin-top: 12px;
+    
 }
 
 .quote-para {
     background-color: #e5e7eb;
+    padding: 120px 280px;
+    display: flex;
+    flex-direction: column;
+
 }
 
 .quote {
@@ -73,10 +147,11 @@ button {
     font-weight: 100;
     font-style: italic;
     color: #1f2937;
+    width: 900px;
 }
 
 .quote-attr {
-    font-size: 18px;
+    font-size: 24px;
     font-weight: bolder;
     display: flex;
     justify-content: flex-end;
@@ -86,4 +161,13 @@ button {
     background-color: #3882f6;
     font-size: 18px;
     color: #e5e7eb;
+}
+
+.footer {
+    font-size: 18px;
+    color: #e5e7eb;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: auto;
 }
